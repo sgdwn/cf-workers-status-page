@@ -18,10 +18,11 @@ monitors:
   - id: iod-li-URL-shortener # unique identifier
     name: iod.li URL Shortener
     description: 'URL Shortener' # default=empty
-    url: 'https://iod.li/admin' # URL to fetch
+    url: 'https://iod.li/641ovno' # URL to fetch
     method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
+    expectStatus: 301 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
+
 
   - id: read-gdwn-cc
     name: read.gdwn.cc
@@ -29,3 +30,25 @@ monitors:
     url: 'https://read.gdwn.cc'
     method: GET
     expectStatus: 200
+    
+  - id: iodli-choice
+    name: choice.iod.li
+    description: 'docs chooser'
+    url: 'https://choice.iod.li'
+    method: GET
+    expectStatus: 200
+    
+  - id: al-bio
+    name: albio.iod.li
+    description: 'A Level biology guide'
+    url: 'https://albio.iod.li'
+    method: GET
+    expectStatus: 200
+    
+  - id: al-chem
+    name: alchem.iod.li
+    description: 'A Level chemistry guide'
+    url: 'https://alchem.iod.li'
+    method: GET
+    expectStatus: 200
+    

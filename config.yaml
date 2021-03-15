@@ -20,7 +20,7 @@ monitors:
     description: 'URL Shortener' # default=empty
     url: 'https://iod.li/641ovno' # URL to fetch
     method: GET # default=GET
-    expectStatus: 301 # operational status, default=200
+    expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
 
 
